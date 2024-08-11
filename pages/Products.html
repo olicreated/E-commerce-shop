@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class=" p-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <img src="/images/logo.png" alt="Logo" class="logo" style="height: 50px;">
+        <nav>
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="/pages/Products.html">Shop</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+        </nav>
+          
+<div class="search-cart d-flex align-items-center">
+  <div class="input-group">
+      <input type="text" class="form-control search-input" placeholder="Search">
+      <div class="input-group-append">
+          <span class="input-group-text bg-white border-left-0">
+              <i class="fas fa-search"></i>
+            </div>
+          </span>
+  </div>
+  <div class="cart-icon ml-2">
+      <a href="/pages/Add-to-cart.html" class="position-relative">
+          <i class="fas fa-shopping-cart fa-lg"></i>
+          <span class="badge badge-danger position-absolute" style="top: -10px; right: -10px;">0</span>
+      </a>
+  </div>
+</div>
+    </div>
+</header>
+
+<!-- Main Section -->
+<main class="container-fluid bg-white my-5">
+    <div class="row">
+        <!-- Sidebar for Categories -->
+         <fieldset>
+        <div class="col-md-3 p-1">
+                <ul class="list-unstyled">
+                    <li><a href="All" class="category-link" data-category="all">All </a></li>
+                    <li><a href="Clothes" class="category-link" data-category="clothes">Clothes</a></li>
+                    <li><a href="Electronics" class="category-link" data-category="electronics">Electronics</a></li>
+                    <li><a href="Furniture" class="category-link" data-category="furniture">Furniture</a></li>
+                    <li><a href="Shoes" class="category-link" data-category="shoes">Shoes</a></li>
+                    <li><a href="Miscellaneous" class="category-link" data-category="miscellaneous">Miscellaneous</a></li>
+                </ul>
+            
+        </div>
+      </fieldset>
+        <!-- Products Section -->
+        <div class=" product-section col-md-9">
+            <div class="row" id="product-list">
+                <div class="col-md-3 mb-4 product" data-category="clothes">
+                    <div class="card">
+                        <img src="/images/black-hoodie-cloth.jpeg" class="card-img-top" alt="image">
+                            <h5 class="card-text">Classic Black Hooded Sweatshirt</h5>
+                            <p class="card-text-product">Our latest version of the Classic Hoodie is made from quality 
+                              year-round 11oz cotton, with a bit of stretch added for performance
+                               and comfort.  Designed to fit the 'not so tall' guy, it includes shorter sleeves and body length, 
+                              and properly scaled pockets and hood.  Never too big or too baggy, you will love this versatile piece! </p> 
+                            <h5 class="card-text product-price">$44</h5>
+                            <a href="/pages/Add-to-cart.html" class="btn btn-primary add-to-cart" data-id="1" data-name="Classic Black Hooded Sweatshirt" data-price="44">Add to Cart</a>                   
+                   </div>
+                </div>
+
+                <div class="col-md-3 mb-4 product" data-category="clothes">
+                  <div class="card">
+                <img src="/images/classic heather-cloth.jpeg" class="card-img-top" alt="hoodie">
+                  <h5 class="card-text">Classic Grey Heather Sweatshirt</h5>
+                  <p class="card-text-product">Our latest version of the Classic sweatshirt is made from quality 
+                    year-round 11oz cotton, with a bit of stretch added for performance
+                     and comfort.  Designed to fit the 'not so tall' guy, it includes shorter sleeves and body length, 
+                    and properly scaled pockets and hood.  Never too big or too baggy, you will love this versatile piece! </p> 
+                    <h5 class="card-text"> $90</h5>
+                    <a href="/pages/Add-to-cart.html" class="btn btn-primary add-to-cart" data-id="2" data-name="Classic Grey Heather Sweatshirt" data-price="90">Add to Cart</a>                       
+              </div>
+            </div>
+
+
+            <div class="col-md-3 mb-4 product" data-category="clothes">
+              <div class="card">
+                <img src="/images/classic hooded-cloth.jpeg" class="card-img-top" alt="img">
+                  <h5 class="card-text">Classic Grey Hooded Hoodie</h5>
+                  <p class="card-text-product">Our latest version of the Classic Hoodie is made from quality 
+                    year-round 11oz cotton, with a bit of stretch added for performance
+                     and comfort.  Designed to fit the 'not so tall' guy, it includes shorter sleeves and body length, 
+                    and properly scaled pockets and hood.  Never too big or too baggy, you will love this versatile piece! </p> 
+                    <h5 class="card-text"> $69</h5>
+                    <a href="/pages/Add-to-cart.html" class="btn btn-primary add-to-cart" data-id="3" data-name="Classic Grey Hooded Hoodie" data-price="69">Add to Cart</a>                     
+                     </div>
+                </div>
+              
+                
+            <div class="col-md-3 mb-4 product" data-category="clothes">
+              <div class="card">
+                <img src="/images/classic red-cloth.jpeg" class="card-img-top" alt="image">
+                  <h5 class="card-text">Classic Red Pullover Hoodie</h5>
+                    <p class="card-text-product">Our latest version of the Classic Hoodie is made from quality 
+                    year-round 11oz cotton, with a bit of stretch added for performance
+                     and comfort.  Designed to fit the 'not so tall' guy, it includes shorter sleeves and body length, 
+                    and properly scaled pockets and hood.  Never too big or too baggy, you will love this versatile piece! </p> 
+                    <h5 class="card-text">$20</h5>
+                    <a href="/pages/Add-to-cart.html" class="btn btn-primary add-to-cart" data-id="4" data-name="Classic Red Pullover Hoodie" data-price="20">Add to Cart</a>                        
+              </div>
+            </div>
+
+
+            <div class="col-md-3 mb-4 product" data-category="clothes">
+              <div class="card">
+                <img src="/images/comfort-joggers-cloth.jpeg" class="card-img-top" alt="image">
+                  <h5 class="card-text">Classic Comfort Fit Joggers</h5>
+                    <p class="card-text-product">These joggers feature a dynamic color block design and are 
+                      crafted for premium quality and comfort. They offer an adjustable fit with a drawstring waist, </p> 
+                      <h5 class="card-text">$44 </h5>
+                      <p class="card-text"> About 2 hours</p>
+                    <a href="/pages/Add-to-cart.html" class="btn btn-primary add-to-cart" data-id="5" data-name="Classic Comfort Fit Joggers" data-price="44">Add to Cart</a>                        
+              </div>
+            </div>
+
+
+            <div class="col-md-3 mb-4 product" data-category="clothes">
+              <div class="card">
+                 <img src="/images/drawsring-joggers-cloth.jpeg" class="card-img-top" alt="image">
+                  <h5 class="card-text">Classic Comfort Drawstring Joggers</h5>
+                  <p class="card-text-product"> Material is soft,stretchy,comfortable,similar to legging material.
+                   Perfect for yoga, running, jogging, gym workout and other casual activities.</p>
+                    <h5 class="card-text"> $90</h5>
+                    <p class="card-text"> About 2 hours</p>
+                    <a href="/pages/Add-to-cart.html" class="btn btn-primary add-to-cart" data-id="6" data-name="Classic Comfort Drawstring Joggers" data-price="90">Add to Cart</a>                        
+              </div>
+            </div>
+
+
+            <div class="col-md-3 mb-4 product" data-category="clothes">
+              <div class="card">
+                <img src="/images/black-cap.jpeg" class="card-img-top" alt="image">
+                  <h5 class="card-text">Classic Navy Blue Baseball Cap</h5>
+                  <p class="card-text-product">Description. A versatile unisex baseball cap ideal 
+                    for various casual and semi-formal occasions. 
+                  Yes! ENSURE A PERFECT FIT: We have designed this.</p> 
+                    <h5 class="card-text"> $30 </h5>
+                    <p class="card-text"> About 2 hours</p>
+                    <a href="/pages/Add-to-cart.html" class="btn btn-primary add-to-cart" data-id="7" data-name="Classic Navy Blue Baseball Cap" data-price="30">Add to Cart</a>                       
+              </div>
+            </div> 
+                
+
+            <div class="col-md-3 mb-4 product" data-category="clothes">
+              <div class="card">
+                <img src="/images/blue-base-cap.jpeg" class="card-img-top" alt="image">
+                  <h5 class="card-text">Classic Blue Baseball Cap</h5>
+                  <p class="card-text-product">Description. A versatile unisex baseball cap ideal for
+                     various casual and semi-formal occasions. 
+                    Yes! ENSURE A PERFECT FIT:  We have designed this.</p> 
+                    <h5 class="card-text"> $25</h5>
+                    <p class="card-text"> About 2 hours</p>
+                    <a href="/pages/Add-to-cart.html" class="btn btn-primary add-to-cart" data-id="8" data-name="Classic Blue Baseball Cap" data-price="25">Add to Cart</a>                        
+              </div>
+            </div> 
+
+          <div class="col-md-3 mb-4 product" data-category="clothes">
+          <div class="card">
+                <img src="/images/majestic-cloth.jpeg" class="card-img-top" alt="image">
+                  <h5 class="card-text">Majestic Mountain Graphic T-Shirt</h5>
+                  <p class="card-text-product">This stunning t-shirt features a meticulously crafted graphic 
+                    design showcasing majestic peaks against a backdrop of a colorful. </p> 
+                    <h5 class="card-text">$60</h5>
+                    <a href="/pages/Add-to-cart.html" class="btn btn-primary add-to-cart" data-id="9" data-name=" Majestic Mountain Graphic T-Shirt" data-price="60">Add to Cart</a>                        
+                </div>
+              </div>
+          
+         
+            <div class="col-md-3 mb-4 product" data-category="clothes">
+              <div class="card"> 
+            <img src="/images/waisted-nicker-cloth.jpeg" class="card-img-top" alt="image">
+              <h5 class="card-text"> Waisted Short grey Nicker</h5>
+              <h6 class="card-text-product">Decsription: Great for wearing all day, these knickers look great under clothes and are 
+                comfy enough to wear all day, every day.They are soft and stretchy, but firm enough.<br>just for you<br>Smell good </h6>
+                <h5 class="card-text">$28</h5>
+                <a href="/pages/Add-to-cart.html" class="btn btn-primary add-to-cart" data-id="10" data-name=" Waisted Nicker" data-price="28">Add to Cart</a>                        
+              </div>
+          </div>
+      
+
+
+
+                   <!-- electronics-->
+                <div class="col-md-3 mb-4 product" data-category="electronics">
+                    <div class="card">
+                        <img src="/images/electr-freezer1.png" class="card-img-top" alt="images">
+                            <h5 class="card-text">Electric Freezer</h5>
+                            <p class="card-text-product"> Description. Smart Electric Desktop Freezer is a compact
+                               refrigerator that is perfect for small apartments or studios. A sleek and stylish design that will ...</p>
+                            <h5 class="card-text">$299</h5>
+                            <a href="/pages/Add-to-cart.html" class="btn btn-primary add-to-cart" data-id="1" data-name=" Electric Freezer" data-price="299">Add to Cart</a>                       
+                          </div>
+                    </div>
+               
+
+                <div class="col-md-3 mb-4 product" data-category="electronics">
+                  <div class="card"> 
+                    <img src="/images/spark-laptop.png" class="card-img-top" alt="image">
+                      <h5 class="card-text">Dell Spark Laptop</h5>
+                      <p class="card-text-product">Item description: Shop Dell Inspiron Gaming Desktop- Intel Core i7 8GB Memory NVIDIA
+                       GeForce GTX 1060 128GB Solid State Drive + 1TB Hard Drive Recon Blue at Best Buy. </p> 
+                        <h5 class="card-text">$44</h5>
+                        <a href="/pages/Add-to-cart.html" class="btn btn-primary add-to-cart" data-id="2" data-name=" Dell Spark Laptop" data-price="44">Add to Cart</a>                        
+                      </div>
+                  </div>
+              
+
+                  <div class="col-md-3 mb-4 product" data-category="electronics">
+                  <div class="card"> 
+                    <img src="/images/ipod1.png" class="card-img-top" alt="image">
+                      <h5 class="card-text">IPOD HEADSET </h5>
+                      <p class="card-text-product"> Apple EarPods With 3.5mm Headphone Plug - White A1472 MNHF2AM/A.
+                        Apple EarPods With 3.5mm Headphone Plug - White A1472 MNHF2AM/A. </p>
+                        <h5 class="card-text">$44</h5>
+                        <a href="/pages/Add-to-cart.html" class="btn btn-primary add-to-cart" data-id="3" data-name="IPOD HEADSET" data-price="44">Add to Cart</a>                       
+                      </div>
+                    </div>
+                      
+
+                <div class="col-md-3 mb-4 product" data-category="electronics">
+                  <div class="card"> 
+                    <img src="/images/laptop-electroni2.png" class="card-img-top" alt="image">
+                      <h5 class="card-text">Elite Laptop</h5>
+                      <p class="card-text-product">Description: Elite book 1030 G7|| 512 SSD||32GB RAM|| 10 GEN || touch screen, keyboard light, charger.
+                        HD GRAPHICS. HD GRAPHICS. HD GRAPHICS</p>
+                        <h5 class="card-text">$35</h5>
+                        <a href="/pages/Add-to-cart.html" class="btn btn-primary add-to-cart" data-id="4" data-name=" Elite Laptop" data-price="35">Add to Cart</a>                      
+                    </div>
+                  </div>
+                
+
+                  <div class="col-md-3 mb-4 product" data-category="electronics">
+                    <div class="card"> 
+                    <img src="/images/electric-bicycle.jpg" class="card-img-top" alt="image">
+                      <h5 class="card-text"> Electric Bicycle </h5>
+                      <p class="card-text-product"> E-bikes use rechargeable batteries and typically are motor-powered up to 25 to 32 km/h (16 to 20 mph).
+                         High-powered varieties can often travel more than 45 km/h (28 mph).</p>
+                        <h5 class="card-text">$44</h5>
+                        <a href="/pages/Add-to-cart.html" class="btn btn-primary add-to-cart" data-id="5" data-name=" Electric Bicycle " data-price="44">Add to Cart</a>                      
+                    </div>
+                  </div>
+            
+
+
+                   <!-- Furniture -->
+
+                <div class="col-md-3 mb-4 product" data-category="furniture">
+                    <div class="card">
+                        <img src="/images/elegant diningtable.jpeg" class="card-img-top" alt="image">
+                            <h5 class="card-text">Elegant dining table</h5>
+                            <p class="card-text-product"> Traditional dining table styles usually feature ornate detailing like fluted or turned legs,
+                               wood carvings, and dark solid wood finishes.</p>
+                            <p class="card-text">$120</p>
+                            <a href="/pages/Add-to-cart.html" class="btn btn-primary add-to-cart" data-id="1" data-name=" Electric Bicycle " data-price="120">Add to Cart</a>                      
+                          </div>
+                </div>
+
+
+                <div class="col-md-3 mb-4 product" data-category="furniture">
+                  <div class="card"> 
+                <img src="/images/workshop-table.jpeg" class="card-img-top" alt="image">
+                  <h5 class="card-text"> Reading/Office Table</h5>
+                  <p class="card-text-product">Creating an independent and relaxed atmosphere by purchasing a work desk gives 
+                    employees a sense of respect and confidence, and productivity thereby increases.</p>
+                    <h5 class="card-text"> $30</h5>
+                    <a href="/pages/Add-to-cart.html" class="btn btn-primary add-to-cart" data-id="2" data-name="  Reading/Office Table" data-price="30">Add to Cart</a>                      
+                  </div>
+              </div>
+        
+           
+              <div class="col-md-3 mb-4 product" data-category="furniture">
+                <div class="card"> 
+                <img src="/images/modern-chair.jpeg" class="card-img-top" alt="image">
+                  <h5 class="card-text"> Modern Chair</h5>
+                  <p class="card-text-product"> Redefined and contemporary style Modern Chair enhances the look of your house. 
+                    Our chair has been designed from durable Sheesham wood.durable Sheesham wood.</p>
+                    <h5 class="card-text">$48</h5>
+                    <a href="/pages/Add-to-cart.html" class="btn btn-primary add-to-cart" data-id="3" data-name=" Modern Chair " data-price="48">Add to Cart</a>                      
+                </div>
+              </div>
+           
+
+              <div class="col-md-3 mb-4 product" data-category="furniture">
+                <div class="card"> 
+                <img src="/images/leather-sofa.jpeg" class="card-img-top" alt="image">
+                  <h5 class="card-text"> Leather Sofa</h5>
+                  <p class="card-text-product">A couch is a long, comfortable seat for two or three people.
+                    It's 100% genuine leather sofa will be at the top of your list. The
+                     comfort comes from its thick, deep seat cushions. </p>
+                    <h5 class="card-text"> $100 </h5>
+                    <a href="/pages/Add-to-cart.html" class="btn btn-primary add-to-cart" data-id="4" data-name=" Leather Sofa " data-price="100">Add to Cart</a>                      
+                </div>
+              </div>
+         
+
+                  
+
+
+                 <!-- Shoes-->
+                <div class="col-md-3 mb-4 product" data-category="shoes">
+                  <div class="card">
+                      <img src="/images/blue-shoe.jpeg" class="card-img-top" alt="image">
+                          <h5 class="card-text">Colourful Canvas shoe</h5>
+                          <p class="card-text-product"> These shoes are made with faux leather toe cap, padded collar and lace up front. 
+                          With a multicolor art print applied this pair is sure to make you stand out in.</p>
+                          <p class="card-text">$120</p>
+                          <a href="/pages/Add-to-cart.html" class="btn btn-primary add-to-cart" data-id="1" data-name="Colourful Canvas shoe " data-price="120">Add to Cart</a>                      
+                        </div>
+                  </div>
+              
+
+              <div class="col-md-3 mb-4 product" data-category="shoes">
+                <div class="card"> 
+                  <img src="/images/purple leather loofs.jpeg" class="card-img-top" alt="image">
+                    <h5 class="card-text">Purple Leather loofs</h5>
+                    <p class="card-text-product"> Vagabond Purple Leather Low Heel Slip On Shoes Uk 6.5 Eu 40 ; Item Number.
+                       175913225957 ; Brand. Vagabond ; UK Shoe Size. 6.5 ; Accurate description. 4.9.</p>
+                      <h5 class="card-text">$43 </h5>
+                      <a href="/pages/Add-to-cart.html" class="btn btn-primary add-to-cart" data-id="2" data-name=" Purple Leather loofs " data-price="43">Add to Cart</a>                      
+                  </div>
+                </div> 
+
+
+                <div class="col-md-3 mb-4 product" data-category="shoes">
+                  <div class="card"> 
+                  <img src="/images/soccer-shoe.jpeg" class="card-img-top" alt="image">
+                    <h5 class="card-text"> Soccer Shoe</h5>
+                      <p class="card-text-product"> Football shoes are specially designed cleated footwear worn while playing football.
+                         These are also called football boots, cleats or sometimes as soccer shoes .</p>
+                         <h5 class="card-text"> $28 </h5>
+                      <a href="/pages/Add-to-cart.html" class="btn btn-primary add-to-cart" data-id="3" data-name=" Soccer Shoe" data-price="28">Add to Cart</a>                      
+                  </div>
+                </div>
+             
+
+                <div class="col-md-3 mb-4 product" data-category="shoes">
+                  <div class="card"> 
+                  <img src="/images/silver-shoe.jpeg" class="card-img-top" alt="image">
+                    <h5 class="card-text">Silver boot Shoe</h5>
+                    <p class="card-text-product"> GOGO 300 Silver Metallic Stretch Pu Block Heel Gogo Boot, Side Zip Details: 3 Inch Heel Brand: Funtasma.
+                       Materials. Upper: PU. Mid-Sole: PVC. Lining: PU.Mid-Sole: PVC. Lining: PU.</p>
+                      <h5 class="card-text"> $43 </h5>
+                      <a href="/pages/Add-to-cart.html" class="btn btn-primary add-to-cart" data-id="4" data-name=" Silver boot Shoe" data-price="43">Add to Cart</a>                      
+                  </div>
+                </div>
+             
+
+                <div class="col-md-3 mb-4 product" data-category="shoes">
+                  <div class="card"> 
+                  <img src="/images/sandals-shoe.jpeg" class="card-img-top" alt="image">
+                    <p class="card-text">Sandals</p>
+                    <p class="card-text-product"> A sandal is a lightweight, open shoe that you're most likely to wear in the summer time.
+                       If you want your toes to show, buy some sandals!  If you want your toes to show, buy some sandals!</p>
+                      <h5 class="card-text"> $44 </h5>
+                      <a href="/pages/Add-to-cart.html" class="btn btn-primary add-to-cart" data-id="5" data-name=" Sandals" data-price="44">Add to Cart</a>                      
+                  </div>
+                </div>
+              
+
+
+
+                <!-- Miscellaneous-->
+                <div class="col-md-4 mb-4 product" data-category="miscellaneous">
+                  <div class="card">
+                      <img src="/images/glass-bag.jpg" class="card-img-top" alt="Product 3">
+                          <h5 class="card-text">Glass bag</h5>
+                          <p class="card-text-product"> Made of blown glass, the Glass Bag straddles both the steadiness of solid
+                             matter and the translucent fluidity of the liquid from which it is made. </p>
+                          <p class="card-text">$120</p>
+                          <a href="/pages/Add-to-cart.html" class="btn btn-primary add-to-cart" data-id="1" data-name=" Glass bag" data-price="120">Add to Cart</a>                      
+                        </div>
+                  </div>
+             
+
+                  <div class="col-md-4 mb-4 product" data-category="miscellaneous">
+                    <div class="card"> 
+              <img src="/images/parfum1.jpg" class="card-img-top" alt="image">
+              <h5 class="card-text">Esquiste Parfum</h5>
+              <p class="card-text-product"> 30% concentration of fragrance. As parfum contains a high concentration of fragrance,
+                 it is typically the most expensive.Oilier product than the other types of perfume, and tends to be used more sparingly.</p>
+                <h5 class="card-text">$44</h5>
+                <a href="/pages/Add-to-cart.html" class="btn btn-primary add-to-cart" data-id="2" data-name=" Esquiste Parfum" data-price="44">Add to Cart</a>                      
+              </div>
+            </div>
+         
+
+            <div class="col-md-4 mb-4 product" data-category="miscellaneous">
+              <div class="card"> 
+              <img src="/images/luggage.jpg" class="card-img-top" alt="image">
+              <h5 class="card-text">Green Luggage</h5>
+                <p class="card-text-product">Keep it chic and stylish, with lightweight luggage in various shades of deep green.From earthy 
+                  tones to more vivid hues, this season's green suitcases </p>
+                <h5 class="card-text">$44</h5>
+                <a href="/pages/Add-to-cart.html" class="btn btn-primary add-to-cart" data-id="3" data-name=" Green Luggage" data-price="44">Add to Cart</a>                      
+              </div>
+            </div>
+         
+
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="custom-footer bg-dark text-white">
+  <div class="container">
+      <div class="footer-content">
+          <div class=" text ">
+              <p class="follow">Follow us on:</p>
+              <p> <a href="https://www.facebook.com" class="fa fa-facebook"> Facebook : @myshopbeauty</a></p>
+              <p><a href="https://www.twitter.com" class="fa fa-twitter"> Twitter : @myshopbeauty</a></p>
+              <p><a href="https://www.instagram.com" class="fa fa-instagram"> Instagram : @myshopbeauty</a></p>
+          </div>
+          <div class="contact-info">
+              <p>Contact Us: <span class="contact-number">+234 081 456 736</span></p>
+              <p><a href="/pages/Products.html" class="footer-link">Products</a> | 
+                 <a href="/index.html" class="footer-link">Home</a> | 
+                 <a href="/pages/Check-out.html" class="footer-link">Checkout</a></p>
+              <p>Email: <a href="mailto:info@example.com" class="footer-link">oruchinelo@gmail.com</a></p>
+            </div>
+
+      </div>
+      
+  </div>
+
+  <div class="copy col-md-6">
+    <p >&copy; 2024 MYShop. All rights reserved.</p>
+  </div>
+</footer>   
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="/script.js"></script>
+
+
+<!-- <script> -->
+    <!-- // // JavaScript to filter products based on category selection
+    // const categoryLinks = document.querySelectorAll('.category-link');
+    // const products = document.querySelectorAll('.product');
+
+    // categoryLinks.forEach(link => {
+    //     link.addEventListener('click', function(event) {
+    //         event.preventDefault(); // Prevent default anchor click behavior
+    //         const selectedCategory = this.getAttribute('data-category');
+
+    //         products.forEach(product => {
+    //             if (selectedCategory === 'all' || product.dataset.category === selectedCategory) {
+    //                 product.style.display = 'block'; // Show product
+    //             } else {
+    //                 product.style.display = 'none'; // Hide product
+    //             }
+    //         });
+    //     });
+    // });
+</script> -->
+
+
+</body>
+</html>

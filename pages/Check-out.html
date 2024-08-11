@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+    <header class="py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <img src="/images/logo.png" alt="Logo" class="logo" style="height: 50px;">
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/pages/Products.html">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </nav>
+           
+                <div class="search-cart d-flex align-items-center">
+                <div class="input-group">
+                    <input type="text" class="form-control search-input" placeholder="Search">
+                    <div class="input-group-append">
+                        <span class="input-group-text bg-white border-left-0">
+                            <i class="fas fa-search"></i>
+                          </div>
+                        </span>
+                </div>
+
+            <div class="cart-icon ml-2">
+                <a href="/pages/Add-to-cart.html" class="position-relative">
+                    <i class="fas fa-shopping-cart fa-lg"></i>
+                    <span class="badge badge-danger position-absolute" style="top: -10px; right: -10px;">0</span>
+                </a>
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <main class="container bg-white my-5">
+        <h2>Checkout</h2>
+        <form id="checkout-form">
+            <h4>Billing Information</h4>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <input type="text" class="form-control" id="address" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" class="form-control" id="phone" required>
+            </div>
+
+            <h4>Shipping Information</h4>
+            <div class="form-group">
+                <label for="shipping-address">Shipping Address</label>
+                <input type="text" class="form-control" id="shipping-address">
+            </div>
+
+            <h4>Payment Information</h4>
+            <div class="form-group">
+                <label for="card-number">Card Number</label>
+                <input type="text" class="form-control" id="card-number" required>
+            </div>
+            <div class="form-group">
+                <label for="expiry-date">Expiry Date</label>
+                <input type="text" class="form-control" id="expiry-date" required>
+            </div>
+            <div class="form-group">
+                <label for="cvv">CVV</label>
+                <input type="text" class="form-control" id="cvv" required>
+            </div>
+                 
+            <!-- Order summary-->
+            <h4>Order Summary</h4>
+            <div id="order-summary">
+                    <div class="order-item d-flex justify-content-between">
+                        <span>Black Hoodie</span>
+                        <span>$44</span>
+                    </div>
+                    <div class="order-item d-flex justify-content-between">
+                        <span>Electric Freezer</span>
+                        <span>$299</span>
+                    </div>
+                    <div class="order-item d-flex justify-content-between">
+                        <span>Elegant Dining Table</span>
+                        <span>$120</span>
+                    </div>
+                    <div class="order-item d-flex justify-content-between">
+                        <span>Leather Sofa</span>
+                        <span>$100</span>
+                    </div>
+                    <div class="order-item d-flex justify-content-between">
+                        <span>Blue Shoe</span>
+                        <span>$99</span>
+                    </div>
+                    <hr>
+                    <div class="order-total d-flex justify-content-between">
+                        <strong>Total:</strong>
+                        <strong>$662</strong>
+                    </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Place Order</button>
+        </form>
+    </main>
+
+ 
+<!-- Footer -->
+<footer class="custom-footer bg-dark text-white">
+    <div class="container">
+        <div class="footer-content">
+            <div class=" text ">
+                <p class="follow">Follow us on:</p>
+                <p> <a href="https://www.facebook.com" class="fa fa-facebook"> Facebook : @myshopbeauty</a></p>
+                <p><a href="https://www.twitter.com" class="fa fa-twitter"> Twitter : @myshopbeauty</a></p>
+                <p><a href="https://www.instagram.com" class="fa fa-instagram"> Instagram : @myshopbeauty</a></p>
+            </div>
+            <div class="contact-info">
+                <p>Contact Us: <span class="contact-number">+234 081 456 736</span></p>
+                <p><a href="/pages/Products.html" class="footer-link">Products</a> | 
+                   <a href="/index.html" class="footer-link">Home</a> | 
+                   <a href="/pages/Check-out.html" class="footer-link">Checkout</a></p>
+                <p>Email: <a href="mailto:info@example.com" class="footer-link">info@example.com</a></p>
+              </div>
+  
+        </div>
+        
+    </div>
+  
+    <div class="copy col-md-6">
+      <p >&copy; 2024 MYShopchinelo. All rights reserved.</p>
+    </div>
+  </footer>   
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <script src="/script.js"></script>
+
+   
+
+
+</body>
+</html>
