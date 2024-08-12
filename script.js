@@ -62,6 +62,13 @@ function updateCartDisplay() {
     cartIconCount.textContent = cart.reduce((total, item) => total + item.quantity, 0); // Calculate total items in cart
 }
 
+   // Function to update the cart count in the header
+function updateCartCount() {
+    const cartCountElement = document.querySelector(".cart-count");
+    if (cartCountElement) {
+      cartCountElement.textContent = cart.length;
+    }
+  }
 
 // Function to add item to cart
 function addToCart(product) {
