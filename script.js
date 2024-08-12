@@ -126,7 +126,7 @@ async function fetchProducts() {
 // Display products on the product page
 function displayProducts(products) {
     const productsContainer = document.querySelector('.product-section'); //  container for products
-    products.forEach(product => {
+    products.map(product => {
         const productDiv = document.createElement('div');
         productDiv.classList.add('product');
         productDiv.innerHTML = `
