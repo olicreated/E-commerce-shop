@@ -37,8 +37,7 @@ header .nav-link:hover {
 
 .menu-btn{
   display: none;
-    text-align: right; /* or adjust as needed */
-    margin-bottom: 1rem; 
+    
 }
 
 .menu-btn .collapse {
@@ -155,6 +154,7 @@ font-size: 5px;
   .menu-btn{
     display: block;
     text-align:left; 
+    
   }
 
   .menu-btn .collapse {
@@ -195,6 +195,8 @@ font-size: 5px;
 @media (max-width: 786px) {
   .menu-btn {
     margin-left: auto; /* Push the menu button to the right */
+    text-align: right;  
+    margin-bottom: 1rem;
   }
   
   .menu-btn .btn {
